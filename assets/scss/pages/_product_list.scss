@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/*
+ * Page name
+ * Copyright 2025
+ * Auther
+ * Licensed
+*/
+
+/* ------------------------------*\
+    Content
+\* ------------------------------*/
+/**
+ * Content ................You are reading it!
+ * product.................所有商品
+ ** products_nav...........商品選單
+ ** pagination.............商品分頁
+*/
+
+/*------------------------------------*\
+    products
+\*------------------------------------*/
+
+/* --------------*\
+    products_nav
+\* --------------*/
+
+.products_nav_item{
+    .active{
+        color: $primary--400;
+    }
+}
+
+/* --------------*\
+    pagination
+\* --------------*/
+.pages{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.page-item{
+    .btn{
+        padding: 8px 15px;
+        border-radius: 0;
+        font-weight: 400;
+    }
+
+    .active{
+        background-color: $primary--300;
+        font-weight: 500;
+    }
+}

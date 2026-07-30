@@ -1,0 +1,23 @@
+/* --------------*\
+    breadcrumb
+\* --------------*/
+.breadcrumb{
+    display: flex;
+}
+
+.breadcrumb-item +.breadcrumb-item:before{
+    content: "/";
+    padding: 0 12px;
+    color: $neutral--300;
+    font-weight: 700;
+}
+
+.breadcrumb-link{
+    color: $neutral--600;
+}
+
+@media (max-width : 767px){
+    .breadcrumb-item +.breadcrumb-item:before{
+        padding: 0 8px;
+    }
+}

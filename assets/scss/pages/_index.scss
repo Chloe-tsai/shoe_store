@@ -1,0 +1,195 @@
+.hero_bg{
+  background-image: url(/assets/images/index/banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero{
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  height: 800px;
+  overflow: hidden;
+
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .title{
+    position: absolute;
+    top: 289px;
+    left: 200px;
+    color: $neutral--white;
+  }
+  .subtitle{
+    position: absolute;
+    top: 382px;
+    left: 200px;
+    color: $neutral--white;
+  }
+  .btn{
+    position: absolute;
+    top: 468px;
+    left: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .hero_bg{
+  position: absolute;
+  background-image: url(/assets/images/index/banner-sm.png);
+  }
+  .hero_text{
+    display: flex;
+    padding-left: 24px;
+		padding-right: 24px;
+  }
+}
+
+.new_products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new_products + .row img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.product{
+  position: relative;
+
+  .tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    background-color: $primary--100;
+    font-size: 14px;
+    color: $primary--400;
+  }
+}
+
+@media (max-width:767px) {
+  .product-md-row{
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+  .product-md-col{
+    min-width: 316px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.index_banner{
+  text-align: center;
+  background-image: url(/assets/images/index/banner-co-branded.png);
+  background-size: cover;
+  background-position: center;  
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+  
+  .btn{
+    padding: 12px 24px;
+  }
+  .star-img{
+    position: absolute;
+    width: 48px;
+    top: 68px;
+    left: calc(50% - 397px);
+  }
+  .sparkle-img{
+    position: absolute;
+    width: 76px;
+    bottom: 132px;
+    right: calc(50% - 357px);
+  }
+}
+
+@media (max-width:767px) {
+  .index_banner{
+    padding: 64px 0;
+    background-image: url(/assets/images/index/banner-co-branded-sm.png);
+    overflow: hidden;
+  }
+    .star-img{
+      top: 32px;
+      left: -20px;
+    }
+
+    .sparkle-img{
+      bottom: 104px;
+      right: -28px;
+    }
+  .overflow-x-md-auto {
+    overflow-x: auto;
+  }
+}
+
+.category{
+  position: relative;
+  .category-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color: black, $alpha: 0.4);
+    color: $neutral--white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+}
+
+.inspiration-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+
+}
+
+.inspiration-col-4{
+  width: calc(100% / 12 * 4);
+  padding: 4px;
+}
+
+.inspiration-col-6{
+  width: calc(100% / 12 * 6);
+  padding: 4px;
+}
+
+.inspiration-col-12{
+  width: 100%;
+  padding: 4px;
+}
+
+@media (max-width: 767px) {
+  .inspiration-row{
+    flex-wrap: nowrap;
+    margin: 0 -8px;
+    img{
+      min-width: 300px;
+    }
+  }
+  .inspiration-col-4,
+  .inspiration-col-6,
+  .inspiration-col-12 {
+    width: unset;
+    padding: 0 8px;
+  }
+}

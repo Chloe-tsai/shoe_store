@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/*
+ * Page name
+ * Copyright 2025
+ * Auther
+ * Licensed
+*/
+
+/* ------------------------------*\
+    Content
+\* ------------------------------*/
+/**
+ * Content ................You are reading it!
+ ** section_navbar.........部分導覽列
+ ** intro..................介紹
+*/
+
+
+/* --------------*\
+    section_navbar
+\* --------------*/
+.section_navbar{
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/73cf206013997d2173d20441794095af8b1ee3b9/2025-week1/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .section_nav{
+        padding: 152px 0;
+        text-align: center;
+    }
+
+    @media (max-width: 767px) {
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/73cf206013997d2173d20441794095af8b1ee3b9/2025-week1/hero.png");
+        padding: 0;
+
+        .section_nav{
+            padding: 87px 0;
+        }
+    }
+}
+
+/* --------------*\
+    intro
+\* --------------*/
+
+.quote{
+    background-color: $primary--100;
+    border-radius: 12px;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        text-align: left;
+    }
+}
+
+.intro{
+    img{
+        display: block;
+        width: 100%;
+        max-width: 1076px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 48px;
+    }
+}
+
+.section-lined{
+    border-bottom: 1px solid var(--neutral--300);
+}
+
+.history-list{
+    list-style-type: disc;
+    padding-left: 24px;
+
+    .history{
+        border-left: 1px solid var(--neutral--900);
+        padding-left: 8px;
+    }
+}
+
+.concept{
+    .concept-item{
+        border-left: 3px solid var(--neutral--300);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+.bi{
+    padding-right: 8px;
+    vertical-align: bottom;
+}
+
+/* 底線*/
+.story-list{
+    li{
+        position: relative;
+    }
+
+    a{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--primary--400);
+
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover::after{
+            transform: scaleX(1);
+        }
+    }
+}

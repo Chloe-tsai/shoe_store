@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*
+ * Page name
+ * Copyright 2025
+ * Auther
+ * Licensed
+*/
+
+/* ------------------------------*\
+    Content
+\* ------------------------------*/
+/**
+ * Content ................You are reading it!
+ * Base....................基礎樣式
+ ** default style........box-sizing、img 等預設樣式設定
+ ** typography...........h1~h5 標題字級與行高
+*/
+
+/* ------------------------------*\
+    Base
+\* ------------------------------*/
+
+/* ----------------*\
+    default style
+\* ----------------*/
+*,
+::before,
+::after{
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	max-width: 1320px;
+	margin: 0 auto;
+	/* border: 1px solid #000; */
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.d-none{
+	display: none;
+}
+@media (max-width: 767px) {
+	.d-md-block{
+		display: block;
+	}
+	.d-md-none{
+		display: none;
+	}
+	.d-md-flex{
+		display: flex;
+	}
+}
+
+@media (max-width: 576px) {
+	.d-sm-block{
+		display: block;
+	}
+	.d-sm-none{
+		display: none;
+	}
+}
+
+
+img{
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+body{
+	font-family: "Noto Sans TC", sans-serif,"Mina";
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.05em;
+}
+
+a{
+	color:$neutral--900;
+	text-decoration: none;
+	display: block;
+	font-weight: 500;
+}

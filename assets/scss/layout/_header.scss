@@ -1,0 +1,59 @@
+/* --------------*\
+    Navigation
+\* --------------*/
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  .nav_top{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .nav_left{
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .nav_item{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 0;
+  }
+
+  .nav_person{
+    padding: 12px;
+  }
+
+  .nav_list,
+  .nav_item{
+    display: inline-flex;
+  }
+
+  .nav_top,
+  .nav_person{
+    align-content: center;
+  }
+
+  @media (max-width: 767px){
+    .nav_tabs{
+      text-align: center;
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .tab-200{
+    background-color: $primary--200;
+  }
+
+  .tab-100{
+    background-color: $primary--100;
+  }
+}
