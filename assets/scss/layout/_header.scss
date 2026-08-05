@@ -39,7 +39,7 @@
     align-content: center;
   }
 
-  @media (max-width: 767px){
+  @include md {
     .nav_tabs{
       text-align: center;
       margin-left: -12px;
@@ -48,7 +48,7 @@
   }
 }
 
-@media (max-width: 767px){
+@include md {
   .tab-200{
     background-color: $primary--200;
   }

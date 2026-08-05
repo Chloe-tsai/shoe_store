@@ -16,7 +16,7 @@
     color: $neutral--600;
 }
 
-@media (max-width : 767px){
+@include md {
     .breadcrumb-item +.breadcrumb-item:before{
         padding: 0 8px;
     }

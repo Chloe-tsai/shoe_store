@@ -44,7 +44,7 @@
     left: 200px;
   }
 }
-@media (max-width: 767px) {
+@include md {
   .hero_bg{
   position: absolute;
   background-image: url(/assets/images/index/banner-sm.png);
@@ -57,9 +57,7 @@
 }
 
 .new_products{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
 }
 .new_products + .row img{
   width: 100%;
@@ -80,7 +78,7 @@
   }
 }
 
-@media (max-width:767px) {
+@include md {
   .product-md-row{
     margin-right: -8px;
     margin-left: -8px;
@@ -118,7 +116,7 @@
   }
 }
 
-@media (max-width:767px) {
+@include md {
   .index_banner{
     padding: 64px 0;
     background-image: url(/assets/images/index/banner-co-branded-sm.png);
@@ -178,7 +176,7 @@
   padding: 4px;
 }
 
-@media (max-width: 767px) {
+@include md {
   .inspiration-row{
     flex-wrap: nowrap;
     margin: 0 -8px;

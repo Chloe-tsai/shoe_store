@@ -31,7 +31,7 @@
         text-align: center;
     }
 
-    @media (max-width: 767px) {
+    @include md {
         background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/73cf206013997d2173d20441794095af8b1ee3b9/2025-week1/hero.png");
         padding: 0;
 
@@ -50,7 +50,7 @@
     border-radius: 12px;
     text-align: center;
 
-    @media (max-width: 767px) {
+    @include md {
         text-align: left;
     }
 }

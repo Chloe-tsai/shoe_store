@@ -37,8 +37,10 @@
 .pages{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    overflow-x: hidden
 }
+
 
 .page-item{
     .btn{

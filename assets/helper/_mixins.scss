@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* ------------------------------*\
+    Content
+\* ------------------------------*/
+/**
+ * Content ..............You are reading it!
+ * Breakpoints...........RWD 斷點
+*/
+
+/* ------------------------------*\
+    Breakpoints
+\* ------------------------------*/
+@mixin md {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin sm {
+	@media (max-width: 576px) {
+		@content;
+	}
+}
