@@ -42,6 +42,10 @@
     position: absolute;
     top: 468px;
     left: 200px;
+
+    &:hover{
+      background-color: $primary--400;
+    }
   }
 }
 @include md {
@@ -101,6 +105,10 @@
   
   .btn{
     padding: 12px 24px;
+
+    &:hover{
+      background-color: $primary--400;
+    }
   }
   .star-img{
     position: absolute;

@@ -67,7 +67,7 @@
 }
 
 .section-lined{
-    border-bottom: 1px solid var(--neutral--300);
+    border-bottom: 1px solid $neutral--300;
 }
 
 .history-list{
@@ -75,14 +75,14 @@
     padding-left: 24px;
 
     .history{
-        border-left: 1px solid var(--neutral--900);
+        border-left: 1px solid $neutral--900;
         padding-left: 8px;
     }
 }
 
 .concept{
     .concept-item{
-        border-left: 3px solid var(--neutral--300);
+        border-left: 3px solid $neutral--300;
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -111,7 +111,7 @@
             bottom: 0;
             width: 100%;
             height: 1px;
-            background-color: var(--primary--400);
+            background-color: $primary--400;
 
             transform: scaleX(0);
             transform-origin: left;
