@@ -1,4 +1,5 @@
 @import "../helper/_variables.scss";
+@import "../helper/_mixins.scss";
 @import "../helper/_utils.scss";
 
 
@@ -12,5 +13,7 @@
 
 
 @import './pages/index.scss';
-@import "./pages/product_list";
+@import "./pages/products";
 @import "./pages/story";
+
+ 

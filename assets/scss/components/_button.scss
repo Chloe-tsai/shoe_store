@@ -24,6 +24,10 @@
     &-dark{
         background-color: $neutral--900;
         color: $neutral--white;
+
+        &:hover{
+            background-color: $neutral--600;
+        }
     }
 
     &-light{
@@ -34,7 +38,7 @@
         background-color: $primary--300;
     }
 
-    @media (max-width: 576px) {
+    @include sm {
         padding: 8px 16px;
     }
 }

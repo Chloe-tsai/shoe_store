@@ -28,6 +28,7 @@
 ::before,
 ::after{
 	box-sizing: border-box;
+
 }
 .container{
 	width: 100%;
@@ -36,12 +37,16 @@
 	/* border: 1px solid #000; */
 	padding-left: 12px;
 	padding-right: 12px;
+
+}
+.d-flex{
+	display: flex;
 }
 
 .d-none{
 	display: none;
 }
-@media (max-width: 767px) {
+@include md {
 	.d-md-block{
 		display: block;
 	}
@@ -53,7 +58,7 @@
 	}
 }
 
-@media (max-width: 576px) {
+@include sm {
 	.d-sm-block{
 		display: block;
 	}

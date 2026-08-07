@@ -37,14 +37,20 @@
 .pages{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    overflow-x: hidden
 }
+
 
 .page-item{
     .btn{
         padding: 8px 15px;
         border-radius: 0;
         font-weight: 400;
+
+        &:not(.active):not(.disabled):hover{
+            background-color: $primary--100;
+        }
     }
 
     .active{
